@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resolved Alerts</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<h2>✅ Resolved Emergencies</h2>
+
+<div id="resolved"></div>
+
+<script>
+function loadResolved() {
+  let data = JSON.parse(localStorage.getItem("resolvedAlerts")) || [];
+
+  let container = document.getElementById("resolved");
+  container.innerHTML = "";
+
+  data.forEach(a => {
+    container.innerHTML += `
+      <div class="card">
+        <h3>${a.type}</h3>
+        <p>📍 ${a.location}</p>
+        <p>⏱ ${a.time}</p>
+        <p class="resolved">Resolved</p>
+      </div>
+    `;
+  });
+}
+
+loadResolved();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0a0f1f, #121a33);
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+/* Title */
+h2 {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px auto;
+  padding: 20px;
+  width: 70%;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Text */
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* Status Colors */
+.pending {
+  color: #FFD700; /* yellow */
+  font-weight: bold;
+}
+
+.progress {
+  color: #00c3ff; /* blue */
+  font-weight: bold;
+}
+
+.resolved {
+  color: #00ff88; /* green */
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  margin: 8px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Start Button */
+.start {
+  background: linear-gradient(45deg, #ff9800, #ff5722);
+  color: white;
+}
+
+.start:hover {
+  transform: scale(1.05);
+}
+
+/* Resolve Button */
+.done {
+  background: linear-gradient(45deg, #00c853, #00ff88);
+  color: black;
+}
+
+.done:hover {
+  transform: scale(1.05);
+}
+
+/* Location & Time */
+p {
+  margin: 6px 0;
+  opacity: 0.9;
+}
