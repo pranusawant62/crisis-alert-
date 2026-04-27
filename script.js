@@ -380,12 +380,7 @@ async function sendType(type, icon) {
   saveAlerts(alerts);
   renderUserFeed();
   renderUserStats();
-  toast('✅','Alert Dispatched',`${type} alert sent! Notifying your emergency contact on WhatsApp...`);
-
-  // Auto-send WhatsApp to emergency contact for every alert
-  setTimeout(() => {
-    sendWhatsAppAlert(loc, type, id);
-  }, 1500);
+  toast('✅','Alert Dispatched',`${type} alert sent to emergency services.`);
 }
 
 // ── WHATSAPP TO EMERGENCY CONTACT ────────────────────
