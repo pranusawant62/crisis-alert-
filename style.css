@@ -112,17 +112,7 @@ img{max-width:100%;display:block}
 .ale-depts{font-size:14px;color:var(--t2)}
 
 .auth-right{background:var(--bg);display:flex;align-items:flex-start;justify-content:center;padding:40px 40px;overflow-y:auto}
-@media(max-width:900px){
-  .auth-layout{display:flex;flex-direction:column}
-  .auth-left{display:flex;order:-1;padding:20px 20px 16px;border-right:none;border-bottom:1px solid var(--border)}
-  .auth-left-inner{max-width:100%}
-  .al-logo{margin-bottom:10px}
-  .al-title{font-size:18px;margin-bottom:12px}
-  .al-features{margin-bottom:10px}
-  .alf-item{font-size:13px}
-  .al-imm{display:none}
-  .auth-right{padding:24px 20px;order:0}
-}
+@media(max-width:900px){.auth-left{display:none}.auth-right{padding:24px 20px}}
 .auth-form-wrap{width:100%;max-width:460px;padding-top:24px}
 .back-btn{background:none;border:none;color:var(--t3);font-size:13px;font-weight:500;cursor:pointer;display:flex;align-items:center;gap:4px;margin-bottom:28px;padding:0;font-family:var(--font);transition:color .15s}
 .back-btn:hover{color:var(--t2)}
