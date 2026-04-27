@@ -380,9 +380,9 @@ async function sendType(type, icon) {
   saveAlerts(alerts);
   renderUserFeed();
   renderUserStats();
-  toast('✅','Alert Dispatched',`${type} alert sent. Sending WhatsApp to your emergency contact...`);
+  toast('✅','Alert Dispatched',`${type} alert sent! Notifying your emergency contact on WhatsApp...`);
 
-  // Auto-send WhatsApp to emergency contact
+  // Auto-send WhatsApp to emergency contact for every alert
   setTimeout(() => {
     sendWhatsAppAlert(loc, type, id);
   }, 1500);
